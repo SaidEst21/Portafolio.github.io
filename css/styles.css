@@ -1,0 +1,439 @@
+* {
+
+    transition: all 0.5s ease-in;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+
+    background: #000;
+}
+
+header {
+
+    position: fixed;
+    background: #0005;
+    box-shadow: 0 1px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    padding: 0 20px;
+}
+
+header img {
+
+    width: 40px;
+    height: 40px;
+    background: #fffc;
+    border-radius: 5px;
+}
+
+header img:hover {
+
+    background: #fff;
+}
+
+nav {
+
+    height: 60px;
+}
+
+.flex-container {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-display {
+
+    padding: 20px 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.nav-display:hover {
+
+    cursor: pointer;
+}
+
+.nav-ul {
+
+    position: absolute;
+    top: var(--top);
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #0005;
+    width: 100%;
+}
+
+.nav-ul li {
+
+    padding: 10px;
+}
+
+.nav-ul a {
+
+    color: #8af;
+    font-weight: 800;
+}
+
+.nav-ul a:hover {
+
+    color: #fff;
+}
+
+.banner {
+
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+
+    background: url("../assets/img/background/mobile_img.jpg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    filter: blur(3px);
+}
+
+.banner b {
+
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #eee;
+    cursor:default;
+}
+
+.banner b:hover {
+    
+    color: #aaa;
+}
+
+.container {
+
+    background: #fff;
+    box-shadow: #fff 0 1px 10px;
+}
+
+section {
+
+    padding: 10px;
+}
+
+h2 {
+
+    text-decoration: underline #8af;
+    font-weight: 800;
+    padding: 10px;
+}
+
+p {
+
+    font-weight: 600;
+}
+
+#technologies > h2 {
+
+    text-align: right;
+}
+
+.tech-container {
+
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 10px;
+    transition: transform 0.5s ease-out;
+}
+
+.tech {
+
+    cursor: pointer;
+}
+
+.tech:first-child:hover {
+
+    filter: drop-shadow(0 2px 5px rgb(255, 142, 37));
+}
+
+.tech:nth-child(2):hover {
+
+    filter: drop-shadow(0 2px 5px rgb(37, 150, 255));
+}
+
+.tech:nth-child(3):hover {
+
+    filter: drop-shadow(0 2px 5px rgb(255, 199, 15));
+}
+
+.tech-container b {
+
+    display: block;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.tech-info {
+
+    display: var(--display);
+}
+
+.tech-info i {
+
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.tech-info i:hover {
+
+    color: #8af;
+}
+
+.tech-title {
+
+    padding: 10px;
+    text-decoration: underline #8af;
+}
+
+#proyects {
+
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.proyects-container {
+
+    margin: 40px 10px;
+    height: 413px;
+    overflow: hidden;
+}
+
+.proyects-container li {
+
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    bottom: var(--bottom);
+    flex-wrap: wrap;
+}
+
+.proyects-container > li > div {
+
+    position: relative;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.proyects-container li:hover > .proyect-background {
+
+    filter: blur(0);
+}
+
+.proyect-background-div {
+
+    background: #0005;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+}
+
+.proyect-background {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(1px);
+}
+
+.proyect-info {
+
+    position: relative;
+    margin: 200px 0 0;
+    height: 213px;
+    color: #fff;
+    z-index: 100;
+}
+
+.proyect-info h3, .proyect-info b, .proyect-info p, .proyect-info a {
+
+    filter: drop-shadow(1px 1px 1px #000);
+}
+
+.proyect-info h3 {
+
+    padding-left: 10px;
+    text-decoration: underline #8af;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.proyect-info h3:hover {
+
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 1px #222);
+    color: #8af;
+}
+
+.proyect-info b {
+
+    display: block;
+    padding-left: 10px;
+}
+
+.proyect-info p {
+
+    padding: 5px;
+}
+
+.proyect-links {
+
+    width: 100%;
+    margin: 5px;
+    background: #0002;
+    border: solid 1px #000;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+
+.proyect-links:hover {
+
+    cursor: pointer;
+    background: #0005;
+}
+
+.arrow {
+
+    position: absolute;
+    font-size: 25px;
+    color: #8af;
+    top: 300px;
+}
+
+.arrow:nth-child(1) {
+
+    left: 5%;
+}
+
+.arrow:nth-child(2) {
+
+    right: 5%;
+}
+
+#contact {
+
+    padding: 50px 0;
+}
+
+#contact a {
+
+    color: #8af;
+}
+
+#contact a:hover {
+
+    color: #fff;
+}
+
+#contact i{
+
+    display: block;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+
+    .background {
+
+        background: url("../assets/img/background/img.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    header img {
+
+        margin: 0 0 0 4%;
+    }
+
+    nav {
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-display {
+
+        display: none;
+    }
+
+    .nav-ul {
+
+        position: static;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background: none;
+        width: 100%;
+    }
+
+    .proyects-container {
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .proyects-container li {
+
+        bottom: 0;
+    }
+
+    .arrow {
+
+        display: none !important;
+    }
+
+    body::-webkit-scrollbar {
+
+        background: #fff;
+        width: 10px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+
+        background: #555;
+        border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+
+        background: #333;
+        border-radius: 10px;
+    }
+}
